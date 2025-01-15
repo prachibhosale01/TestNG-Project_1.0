@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Properties>
+    <Property name="logs">./log</Property>
+    
+  </Properties>
+    <!-- Appender to log to the console -->
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level: %msg%n%throwable"/>
+        </Console>
+
+        <!-- Appender to log to a file -->
+        <File name="File" fileName="logs/application.log">
+            <PatternLayout>
+                <Pattern>%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level: %msg%n%throwable</Pattern>
+            </PatternLayout>
+        </File>
+    </Appenders>
+
+    <!-- Loggers Configuration -->
+    <Loggers>
+        <!-- Root logger: Logs everything with level INFO and above to console and file -->
+        <Root level="info">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="File"/>
+        </Root>
+
+        <!-- Custom Logger: Logs debug messages for a specific class -->
+        <Logger name="com.mycompany" level="debug" additivity="false">
+            <AppenderRef ref="File"/>
+        </Logger>
+
+    </Loggers>
+
+</Configuration>

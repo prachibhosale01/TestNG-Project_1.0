@@ -3,19 +3,23 @@ package testRunner;
 
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
+import org.testng.annotations.Listeners;
+
+
+
 
 @CucumberOptions(features=".//src/test/resources/Features",
                 glue={"stepDefinitions"}, 
-                tags = "@runThis",
+               tags = "@runThis",
                 dryRun=false,
                
                 plugin= {"pretty","html:target/cucumber-reports/cucumber.html"}
 )
                 
 
-public class MyTestRunner extends AbstractTestNGCucumberTests
+public class Runner extends AbstractTestNGCucumberTests
 {
-
+	
 	
 }
 

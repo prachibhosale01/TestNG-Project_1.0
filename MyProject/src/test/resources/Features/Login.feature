@@ -9,7 +9,7 @@ And click on login
 Then user is on home page and should display the "AppLauncher" 
 And close the browser
 
-
+@runThis
 Scenario Outline: Login Data Driven
 
 Given user launch the browser

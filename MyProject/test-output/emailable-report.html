@@ -9,10 +9,84 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">81,730</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">7,058</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testRunner.MyTestRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="1">1736588232138</td><td rowspan="1">81113</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">testRunner.Runner</td><td><a href="#m0">runScenario</a></td><td rowspan="3">1736918547890</td><td rowspan="3">2606</td></tr><tr class="failedeven"><td><a href="#m1">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m2">runScenario</a></td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">testRunner.MyTestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Verify account record creation&quot;</td><td>&quot;Verify object records are created or not&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">testRunner.Runner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Login Data Driven&quot;</td><td>&quot;Login Functionality&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.265)
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1265d3efdd21752fc69a014b6fc58632, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.265, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\pbhosa02\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57494}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57494/devtoo..., se:cdpVersion: 131.0.6778.265, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1265d3efdd21752fc69a014b6fc58632
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1061)
+	at stepDefinitions.Step.user_open_the_url(Step.java:97)
+	at ✽.user open the URL &quot;https://login.salesforce.com&quot;(file:///C:/Users/pbhosa02/git/repository8/MyProject/./src/test/resources/Features/Login.feature:16)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testRunner.Runner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Verify account record creation&quot;</td><td>&quot;Verify object records are created or not&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.265)
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [61079f82eeb55035b2af02976cccceaf, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.265, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\pbhosa02\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57523}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57523/devtoo..., se:cdpVersion: 131.0.6778.265, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 61079f82eeb55035b2af02976cccceaf
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1061)
+	at stepDefinitions.Step.user_open_the_url(Step.java:97)
+	at ✽.user open the URL &quot;https://login.salesforce.com&quot;(file:///C:/Users/pbhosa02/git/repository8/MyProject/./src/test/resources/Features/ObjectCreation.feature:7)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">testRunner.Runner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Login Data Driven&quot;</td><td>&quot;Login Functionality&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.265)
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2205544d14a0622c7e4e916c818db540, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.265, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\pbhosa02\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57507}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57507/devtoo..., se:cdpVersion: 131.0.6778.265, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2205544d14a0622c7e4e916c818db540
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1061)
+	at stepDefinitions.Step.user_open_the_url(Step.java:97)
+	at ✽.user open the URL &quot;https://login.salesforce.com&quot;(file:///C:/Users/pbhosa02/git/repository8/MyProject/./src/test/resources/Features/Login.feature:16)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
